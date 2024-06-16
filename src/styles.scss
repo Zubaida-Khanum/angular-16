@@ -1,0 +1,301 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg-body: #f2f5f8;
+    --bg-card: #8ecae6;
+    --primary-color: #219ebc;
+    --secondary-color: #023047;
+    --primary-light: #ffff;
+    --secondary-light: #c8c8c8;
+    --text-color-light: black;
+    --primary-clr: #32a0ef;
+    --secondary-clr: #bfbfbf;
+    --dark-clr: #005555;
+    --white-clr: #ffffff;
+    --check-box: #1984d0;
+    --base-clr: #2aa26a;
+    --base-clr-2: #5affba;
+    --border-clr: #99a7ba45;
+    --warning-clr: #ff7500;
+    --danger-clr: #ff6d6d;
+    --success-clr: #00aa6d;
+    --info-clr: #0096ff;
+    --theameColor: #045cff;
+    --title-2: #758590;
+    --title-3: #107980;
+    --hover-clr: #1b7fed;
+  }
+  body{
+    font-size: 1rem !important;
+  }
+  a {
+    text-decoration: none;
+  }
+  .form-control:focus {
+    // border: none !important;
+    box-shadow: none !important;
+  }
+  .form-group .p-dropdown {
+    font-size: 12px !important;
+    height: 37px !important;
+    border-radius: 5px !important;
+  }
+  .p-dropdown {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    background: #ffffff;
+    border: 1px solid #ced4da;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .p-component,
+  .p-component * {
+    box-sizing: border-box;
+  }
+  .p-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .p-dropdown.p-dropdown-clearable .p-dropdown-label {
+    padding-right: 1.75rem;
+  }
+  .p-dropdown.p-dropdown-clearable .p-dropdown-label {
+    align-items: center !important;
+    display: flex !important;
+  }
+  .p-inputtext {
+  //   font-size: 12px !important;
+    border: 0;
+    width: 100%;
+    height: 30px !important;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .p-dropdown-label {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    flex: 1 1 auto;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  
+  .p-field-checkbox {
+    padding-top: 5px;
+    padding-left: 33px;
+  }
+  ol,
+  ul {
+    padding-left: 0;
+  }
+  .sidebar-brand {
+    white-space: nowrap;
+    font-size: x-large;
+  }
+  button {
+    cursor: pointer;
+  }
+  
+  .custom-table table thead tr th {
+    border-top: 0;
+    font-size: 13px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .custom-table {
+    min-height: 185px;
+    max-height: 400px;
+    overflow: auto;
+  }
+  .table-layout-fixed {
+    table-layout: fixed !important;
+  }
+  .checkbox {
+    margin-top: 32px;
+  }
+  .btn-update:disabled {
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+    background: var(--secondary-clr) !important;
+    border: 0 !important;
+    color: var(--white-clr) !important;
+  }
+  .btn-update {
+    background: transparent !important;
+    border: 1px solid var(--primary-clr) !important;
+    color: var(--primary-clr) !important;
+    padding: 5px 10px !important;
+    border-radius: 5px !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    transition: 0.3s all !important;
+  }
+  .btn-save:disabled {
+    cursor: not-allowed;
+    pointer-events: none !important;
+    background: #bfbfbf !important;
+  }
+  .btn-save {
+    background: var(--primary-clr) !important;
+    color: var(--white-clr) !important;
+    border: 0 !important;
+    padding: 5px 10px !important;
+    border-radius: 5px !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    transition: 0.3s all !important;
+  }
+  
+  button,
+  select {
+    text-transform: none;
+  }
+  .p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .btnend {
+    justify-content: flex-end;
+  }
+  .btn-update:hover {
+    background: var(--primary-clr) !important;
+    color: var(--white-clr) !important;
+  }
+  .input-error {
+    color: red !important;
+    font-size: 12px !important;
+    position: absolute !important;
+  }
+  .error-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .card-wrapper {
+    border-radius: 15px;
+    background: white;
+    padding: 1rem;
+  }
+  .p-toolbar {
+    padding: 5px;
+    // background: #f3f3f3;
+    background: transparent;
+    border: 0;
+  }
+  .card-footer:last-child {
+    background-color: white;
+  }
+  .custom-table table tbody tr td .three-dots {
+    background: white;
+    border: 0;
+    border-radius: 4px;
+    padding: 6px 10px;
+  }
+  .form-control:focus {
+    box-shadow: none !important;
+    border: 1px solid #ced4da;
+    border-color: #ced4da !important;
+  }
+  .astrik {
+    color: red;
+    margin-left: 4px;
+    font-size: 1rem;
+    margin-top: -6px;
+    block-size: -webkit-fill-available;
+    block-size: -moz-available;
+    block-size: stretch;
+  }
+  
+  .p-dropdown-panel .p-dropdown-header .p-dropdown-filter {
+    // padding-right: 1.75rem;
+    margin-right: -1.75rem;
+    font-size: 12px;
+  }
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    padding: 10px !important;
+    font-size: 12px;
+  }
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    margin: 0;
+    padding: .5rem 1.5rem;
+    border: 0 none;
+    color: #212529;
+    background: transparent;
+    transition: box-shadow .15s;
+    border-radius: 0;
+  }
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
+    color: #212529;
+    background: #e9ecef;
+  }
+  //////////////sidebar links////////
+  .sidebar-nav a {
+    text-decoration: none !important;
+  }
+  .toast-success {
+    background-image: none !important;
+    background: #7fc65e !important;
+  }
+  
+  .toast-success::after {
+    content: "\f00c" !important;
+    font-family: "FontAwesome" !important;
+    position: absolute !important;
+    // top: 24px !important;
+    left: 10px !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 10px 15px !important;
+    border-radius: 70px;
+    background: #68a74b;
+    font-weight: 900;
+  }
+  
+  .toast-title {
+    color: #fff !important;
+    margin-left: 15px;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    font-family: "Manrope", sans-serif;
+  }
+  
+  .toast-message {
+    color: #fff !important;
+    margin-left: 15px;
+    font-family: "Manrope", sans-serif;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+  }
+  
+  .toast-error {
+    background-image: none !important;
+    background: #da5050 !important;
+  }
+  
+  .toast-error::after {
+    content: "\f00d" !important;
+    font-family: "FontAwesome" !important;
+    position: absolute !important;
+    // top: 15px !important;
+    left: 10px !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 10px 18px !important;
+    border-radius: 70px;
+    background: #bc3838;
+    font-weight: 900;
+  }

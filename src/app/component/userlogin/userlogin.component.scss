@@ -1,0 +1,47 @@
+.login-section{
+    height: 100vh;
+}
+.login-card{
+    width: 450px;
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card-header{
+    background-color: var(--primary-light);
+    display: flex;
+    justify-content: center;
+}
+.login-logo-img{
+    width: 110px;
+    // height: 120px;
+    display: flex;
+}
+.MainHeading{
+    color: #000;
+    font-size: 30px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+}
+.SubHeading {
+    text-align: left;
+    color: #8c8c8c;
+    font-size: 13px;
+}
+.CustomTextBox{
+    outline: none;
+    border: none;
+    background: #ebeef5;
+    border-radius: 5px;
+}
+input:focus {
+    outline: none !important;
+}
+.btnCom{
+    width: 100%;
+    background: var(--primary-clr) !important;
+    color: #fff;
+    font-size: 13px;
+    height: 40px;
+}

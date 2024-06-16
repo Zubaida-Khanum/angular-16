@@ -1,0 +1,82 @@
+
+<div
+  class="container-fluid login-section d-flex justify-content-center align-items-center"
+>
+  <div class="card login-card shadow">
+    <!-- card header -->
+
+    <div class="card-header">
+        <img 
+        src="../../../assets/images/logos/logo1.png"
+         alt="scale"
+          class="login-logo-img">
+        
+      </div>
+    <!-- card body -->
+    <div class="card-body">
+      <form [formGroup]="loginform">
+        <h1 class="MainHeading">Login</h1>
+        <h1 class="SubHeading">Please enter your credentials</h1>
+        <div class="row mt-3">
+          <div class="colo-xl-12 mb-3">
+            <label for="email" class="form-label">Username</label>
+            <input
+              type="text"
+              class="form-control CustomTextBox"
+              placeholder="username"
+              id="email"
+              formControlName="username"
+            />
+            <div class="error-container pt-1">
+              <small
+                *ngIf="
+                  loginform.get('username')?.hasError('required') &&
+                  loginform.get('username')?.touched
+                "
+                class="input-error"
+              >
+                UserName Required
+              </small>
+              <small
+                *ngIf="loginform.get('username')?.hasError('pattern')"
+                class="input-error"
+              >
+                Valid UserName Required
+              </small>
+            </div>
+          </div>
+
+          <div class="colo-xl-12 mb-2">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control CustomTextBox"
+              placeholder="********"
+              id="password"
+              formControlName="password"
+            />
+            <div class="error-container pt-1">
+              <small
+                *ngIf="
+                  loginform.get('password')?.hasError('required') &&
+                  loginform.get('password')?.touched
+                "
+                class="input-error"
+              >
+                Password Required
+              </small>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btnCom mt-4" (click)="login()" [disabled]="!this.loginform.valid">
+          Login
+        </button>
+      </form>
+    </div>
+    <div class="card-footer d-flex justify-content-center align-items-center">
+        <!-- <a href="https://madontechnologies.com/">Powered by Madon Technologies</a> -->
+        <a href="">Powered by Talents Scienec Academy</a>
+    </div>
+  </div>
+</div>
+
